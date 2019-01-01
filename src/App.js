@@ -20,7 +20,7 @@ class App extends Component {
             </div>
           )} />
           <Route path="/home" render={({ match }) => (
-            <HomePage />
+            <HomePage /> 
           )} />
           <Route path="/gridag" render={({ match }) => (
             <GridAG />
