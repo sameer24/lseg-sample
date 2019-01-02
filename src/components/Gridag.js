@@ -6,6 +6,7 @@ import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 import NavBar from "./Navbar";
+import Sidebar from "./Sidebar"
 
 import './css/all.css';
 
@@ -87,20 +88,7 @@ class Gridag extends Component {
             <div>
                 <NavBar />
                 <div id="wrapper">
-                    <ul class="sidebar navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/home">
-                                <i class="fas fa-fw fa-tachometer-alt"></i>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/gridag">
-                                <i class="fas fa-fw fa-table"></i>
-                                <span>Grid AG</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <Sidebar />
                     <div className="container-fluid">
 
                         <div className="card mb-3">
